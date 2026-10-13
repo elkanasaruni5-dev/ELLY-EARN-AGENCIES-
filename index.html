@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ELLY EARN AGENCIES — Your Growth, Our Priority.">
+<title>ELLY EARN AGENCIES</title>
+<style>
+:root{--navy:#08264a;--blue:#0866f5;--ink:#10233f;--muted:#536783;--pale:#f4f8ff;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;background:#fff;z-index:10;border-bottom:1px solid #e8edf5}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:2px;font-size:20px;line-height:1.1}.mark{display:grid;place-items:center;background:var(--blue);color:white;font-weight:900;font-size:22px;width:42px;height:42px;transform:skew(-8deg);border-radius:5px}.brand small{display:block;font-size:10px;text-align:center;letter-spacing:5px;margin-top:5px}.navlinks{display:flex;align-items:center;gap:28px}.navlinks a:hover{color:var(--blue)}.nav-actions{display:flex;gap:10px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--blue);background:var(--blue);color:white;padding:11px 20px;border-radius:9px;font-weight:700;cursor:pointer;font:inherit;font-weight:700}.btn:hover{filter:brightness(.94)}.btn.outline{background:white;color:var(--blue)}.menu{display:none;background:white;border:1px solid #d9e3f2;border-radius:8px;padding:8px 11px;font-size:20px}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(90deg,rgba(4,29,56,.97) 0%,rgba(4,29,56,.91) 42%,rgba(4,29,56,.18) 100%),url('assets/elly-earn-hero.png') center 34%/cover no-repeat;color:white}.hero-inner{min-height:410px;display:flex;align-items:center;padding:54px 0}.hero-copy{max-width:590px}.eyebrow{color:#76b4ff;font-size:13px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase}.hero h1{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.08;margin:12px 0}.hero h2{font-size:clamp(1.25rem,2.8vw,2rem);font-weight:500;margin:10px 0}.hero p{max-width:540px;color:#e0eaf8;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.features{background:#f7faff;padding:30px 0}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.feature{padding:8px 18px;border-right:1px solid #e4ebf5}.feature:last-child{border:0}.icon{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#e4efff;color:var(--blue);font-size:23px;margin-bottom:8px}.feature h3{font-size:17px;margin:6px 0}.feature p{margin:0;color:var(--muted);font-size:14px}
+section{scroll-margin-top:88px}.about{padding:68px 0}.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px}.about-image{min-height:270px;border-radius:15px;background:linear-gradient(135deg,#dce9f8,#f5f8fc);display:grid;place-items:center;overflow:hidden}.about-image img{width:100%;height:100%;object-fit:cover;display:block}.about h2,.section-head h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;margin:8px 0 16px}.about p{color:var(--muted)}.services{background:var(--pale);padding:64px 0}.section-head{text-align:center;margin-bottom:30px}.section-head .eyebrow{color:var(--blue)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service-card{background:white;border:1px solid #e4ebf5;border-radius:14px;padding:24px;box-shadow:0 8px 24px rgba(10,45,90,.04)}.service-card .icon{border-radius:12px}.service-card h3{margin:8px 0}.service-card p{color:var(--muted);font-size:15px;margin-bottom:0}
+.cta{padding:56px 0;background:var(--navy);color:white;text-align:center}.cta p{color:#d5e3f5}.cta .btn{margin-top:10px}footer{background:#061a33;color:#d6e2f2;padding:26px 0;font-size:14px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.notice{font-size:12px;color:#b6c9e2}
+.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(3,16,34,.68);z-index:30;padding:18px;align-items:center;justify-content:center}.modal-backdrop.open{display:flex}.modal{background:white;border-radius:16px;width:min(430px,100%);padding:28px;position:relative;box-shadow:0 20px 70px #00152b55}.close{position:absolute;right:14px;top:10px;background:none;border:0;font-size:25px;cursor:pointer;color:var(--muted)}.modal h2{margin:0 0 5px}.modal p{color:var(--muted);font-size:14px}.field{display:block;margin:14px 0}.field span{display:block;font-size:13px;font-weight:700;margin-bottom:5px}.field input{width:100%;padding:12px;border:1px solid #ccd8e8;border-radius:8px;font:inherit}.modal .btn{width:100%;margin-top:8px}.switch{color:var(--blue);font-weight:700;cursor:pointer}.form-message{font-size:13px;color:#a33;margin-top:10px;min-height:18px}
+
+.dashboard{display:none;padding:54px 0;background:#f5f8fd;min-height:50vh}.dashboard.active{display:block}.dash-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}.dash-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.dash-card{background:#fff;border:1px solid #e1e9f4;border-radius:14px;padding:22px}.dash-card h3{margin:0 0 12px}.dash-muted{color:var(--muted);font-size:14px}.dash-field{display:block;margin:12px 0}.dash-field span{display:block;font-size:13px;font-weight:700;margin-bottom:5px}.dash-field input,.dash-field textarea,.dash-field select{width:100%;padding:11px;border:1px solid #ccd8e8;border-radius:8px;font:inherit;background:white}.dash-table{width:100%;border-collapse:collapse;font-size:14px}.dash-table th,.dash-table td{text-align:left;padding:10px 8px;border-bottom:1px solid #e6edf6}.dash-alert{background:#fff8e6;border:1px solid #f1d58b;color:#73530b;border-radius:10px;padding:13px;font-size:13px;margin-bottom:20px}.dash-success{color:#176b3a;font-size:13px}.dash-error{color:#a33;font-size:13px}.dash-card .btn{margin-top:8px}
+@media(max-width:650px){.dash-grid{grid-template-columns:1fr}.dash-table{font-size:12px}.dash-table th,.dash-table td{padding:8px 4px}}
+
+@media(max-width:850px){.navlinks{gap:16px}.brand{font-size:17px}.feature-grid{grid-template-columns:repeat(2,1fr)}.feature:nth-child(2){border-right:0}.about-grid{gap:28px}}
+@media(max-width:650px){.nav{min-height:68px;flex-wrap:wrap;padding:10px 0}.menu{display:block}.navlinks{display:none;order:3;width:100%;flex-direction:column;align-items:flex-start;gap:0;padding:8px 0}.navlinks.open{display:flex}.navlinks a{padding:10px 0;width:100%}.nav-actions{margin-left:auto}.nav-actions .btn{padding:8px 12px;font-size:13px}.brand{font-size:15px;letter-spacing:1px}.mark{width:36px;height:36px}.brand small{font-size:8px;letter-spacing:4px}.hero{background:linear-gradient(90deg,rgba(4,29,56,.95),rgba(4,29,56,.79)),url('assets/elly-earn-hero.png') center/cover no-repeat}.hero-inner{min-height:390px;padding:42px 0}.hero p{font-size:15px}.feature-grid,.service-grid,.about-grid{grid-template-columns:1fr}.feature{border-right:0;border-bottom:1px solid #e4ebf5;padding:14px 4px}.feature:last-child{border-bottom:0}.about{padding:48px 0}.about-image{min-height:210px}.services{padding:48px 0}.footer-row{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Elly Earn Agencies home"><span class="mark">E</span><span>ELLY EARN<small>AGENCIES</small></span></a>
+    <button class="menu" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navLinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+    <div class="nav-actions"><button class="btn outline" data-modal="login">Login</button><button class="btn" data-modal="signup">Sign Up</button></div>
+  </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner"><div class="hero-copy">
+  <div class="eyebrow">Welcome to</div><h1>ELLY EARN AGENCIES</h1><h2>Your Growth, Our Priority</h2>
+  <p>Explore financial education, investment information, and business support designed to help you make more informed decisions. Review the risks carefully and contact our team before taking action.</p>
+  <div class="actions"><button class="btn" data-modal="signup">Get Started →</button><a class="btn outline" href="#about">Learn More</a></div>
+</div></div></section>
+<section class="features"><div class="wrap feature-grid">
+  <article class="feature"><div class="icon">↗</div><h3>Growth Opportunities</h3><p>Learn about financial concepts and investment opportunities.</p></article>
+  <article class="feature"><div class="icon">✓</div><h3>Trust & Care</h3><p>We aim to explain services clearly and treat customers responsibly.</p></article>
+  <article class="feature"><div class="icon">♙</div><h3>User Accounts</h3><p>Access your account securely once authentication is configured.</p></article>
+  <article class="feature"><div class="icon">☏</div><h3>Dedicated Support</h3><p>Ask our team questions about our services and information.</p></article>
+</div></section>
+<section class="about" id="about"><div class="wrap about-grid">
+  <div class="about-image"><img src="assets/elly-earn-hero.png" alt="ELLY EARN AGENCIES professional workspace" onerror="this.style.display='none';this.parentElement.textContent='ELLY EARN AGENCIES'"></div>
+  <div><div class="eyebrow">About us</div><h2>Building a Better Tomorrow</h2><p>ELLY EARN AGENCIES shares financial education and information about investment-related services. We prioritize clear communication and informed decisions. All investments carry risk; returns are not guaranteed, and visitors should verify any offering and consider independent financial advice.</p><button class="btn" data-modal="signup">Join Us →</button></div>
+</div></section>
+<section class="services" id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">Our services</div><h2>What We Offer</h2><p>Update these cards to match the exact services your agency provides.</p></div>
+  <div class="service-grid">
+    <article class="service-card"><div class="icon">◉</div><h3>Financial Education</h3><p>Understand common financial concepts, risk, diversification, and questions to ask before investing.</p></article>
+    <article class="service-card"><div class="icon">↗</div><h3>Investment Information</h3><p>Review information about services and opportunities carefully. Verify providers and terms before sending money.</p></article>
+    <article class="service-card"><div class="icon">♡</div><h3>Customer Support</h3><p>Contact our team on WhatsApp for general questions about our services.</p></article>
+  </div>
+</div></section>
+
+<section class="dashboard" id="memberDashboard">
+ <div class="wrap">
+  <div class="dash-top"><div><div class="eyebrow">Member area</div><h2 style="margin:4px 0">Your account</h2><div class="dash-muted" id="memberEmail">Signed in</div></div><button class="btn outline" id="signOutButton">Sign out</button></div>
+  <div class="dash-alert"><strong>Important:</strong> This member area displays profile and information and submits requests only. It does not hold funds, execute investments, or process real deposits or withdrawals. Those features require a verified payment/custody provider, server-side controls, reconciliation, and any required regulatory authorization.</div>
+  <div class="dash-grid">
+   <article class="dash-card"><h3>My profile</h3><p class="dash-muted">Update the display name saved to your account.</p><label class="dash-field"><span>Full name</span><input id="profileName" maxlength="100" placeholder="Your full name"></label><button class="btn" id="saveProfileButton">Save profile</button><div id="profileMessage" aria-live="polite"></div></article>
+   <article class="dash-card"><h3>Investment information</h3><p class="dash-muted">Educational information only. No personal recommendation or promised return is provided.</p><ul><li>Understand the risks and fees.</li><li>Verify provider authorization independently.</li><li>Never invest money you cannot afford to lose.</li></ul><a class="btn outline" href="#services">Review services</a></article>
+   <article class="dash-card"><h3>Account activity</h3><p class="dash-muted">Your request history appears here after the database is configured.</p><div id="activityArea" class="dash-muted">Connect Supabase and apply the SQL setup file to load activity.</div></article>
+   <article class="dash-card"><h3>Request a deposit or withdrawal</h3><p class="dash-muted">Submit an enquiry/request for staff follow-up. This does not transfer money or guarantee approval.</p>
+    <form id="transactionRequestForm">
+     <label class="dash-field"><span>Request type</span><select id="requestType" required><option value="deposit">Deposit enquiry</option><option value="withdrawal">Withdrawal enquiry</option></select></label>
+     <label class="dash-field"><span>Amount (KES)</span><input id="requestAmount" type="number" min="1" max="100000000" step="1" required placeholder="Amount in KES"></label>
+     <label class="dash-field"><span>Message (optional)</span><textarea id="requestNote" rows="2" maxlength="500" placeholder="Add a short note"></textarea></label>
+     <button class="btn" type="submit" id="submitRequestButton">Submit request</button><div id="requestMessage" aria-live="polite"></div>
+    </form>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="cta" id="contact"><div class="wrap"><div class="eyebrow">Let's connect</div><h2>Ready to Get Started?</h2><p>Contact ELLY EARN AGENCIES to learn more about our services.</p><a class="btn" href="https://wa.me/254700000000" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a><p class="notice">Replace the sample WhatsApp number (254700000000) with your real business number before publishing.</p></div></section>
+</main>
+<footer><div class="wrap footer-row"><div><strong>ELLY EARN AGENCIES</strong><div class="notice">Your Growth, Our Priority</div></div><div>© <span id="year"></span> ELLY EARN AGENCIES. All rights reserved.</div></div></footer>
+
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal"><button class="close" id="closeModal" aria-label="Close">×</button><h2 id="modalTitle">Welcome back</h2><p id="modalSubtitle">Sign in to your account.</p>
+    <form id="accountForm"><label class="field" id="nameField" hidden><span>Full name</span><input id="fullName" autocomplete="name" placeholder="Your full name"></label>
+      <label class="field"><span>Email address</span><input id="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <label class="field"><span>Password</span><input id="password" type="password" required minlength="8" autocomplete="current-password" placeholder="At least 8 characters"></label>
+      <button class="btn" id="submitAccount" type="submit">Login</button><div class="form-message" id="formMessage" aria-live="polite"></div>
+    </form>
+    <p id="switchText">New here? <span class="switch" data-switch="signup">Create an account</span></p>
+    <p class="notice">Account access uses Supabase when configured. Replace the project URL and public anon key in the code before testing. Never put a service-role key in this website.</p>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const menuButton=document.getElementById('menuButton'), navLinks=document.getElementById('navLinks');
+menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const backdrop=document.getElementById('modalBackdrop'), title=document.getElementById('modalTitle'), subtitle=document.getElementById('modalSubtitle'), nameField=document.getElementById('nameField'), submit=document.getElementById('submitAccount'), switchText=document.getElementById('switchText'), message=document.getElementById('formMessage'), password=document.getElementById('password');
+let mode='login';
+function setMode(next){mode=next;message.textContent='';title.textContent=mode==='login'?'Welcome back':'Create your account';subtitle.textContent=mode==='login'?'Sign in to your account.':'Join ELLY EARN AGENCIES by creating an account.';nameField.hidden=mode!=='signup';document.getElementById('fullName').required=mode==='signup';submit.textContent=mode==='login'?'Login':'Create Account';password.autocomplete=mode==='login'?'current-password':'new-password';switchText.innerHTML=mode==='login'?'New here? <span class="switch" data-switch="signup">Create an account</span>':'Already registered? <span class="switch" data-switch="login">Login instead</span>';switchText.querySelector('[data-switch]').addEventListener('click',e=>setMode(e.target.dataset.switch));}
+document.querySelectorAll('[data-modal]').forEach(b=>b.addEventListener('click',()=>{setMode(b.dataset.modal);backdrop.classList.add('open');document.getElementById('email').focus();}));
+document.getElementById('closeModal').addEventListener('click',()=>backdrop.classList.remove('open'));
+backdrop.addEventListener('click',e=>{if(e.target===backdrop)backdrop.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')backdrop.classList.remove('open')});
+// Supabase Auth setup: replace both placeholders with your Supabase project values.
+const SUPABASE_URL = 'https://YOUR-PROJECT.supabase.co';
+const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY';
+let supabaseClient = null;
+function authConfigured(){return window.supabase && SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('YOUR-PROJECT') && !SUPABASE_ANON_KEY.includes('YOUR_SUPABASE');}
+async function ensureAuthClient(){if(!authConfigured()) return null;if(!supabaseClient){supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);}return supabaseClient;}
+
+const dashboard=document.getElementById('memberDashboard');
+function showDashboard(user){dashboard.classList.add('active');document.getElementById('memberEmail').textContent=user.email||'Signed in';document.querySelectorAll('main > section:not(#memberDashboard)').forEach(s=>{if(s.id!=='contact')s.style.display='none';});dashboard.scrollIntoView({behavior:'smooth'});loadMemberData(user);}
+function hideDashboard(){dashboard.classList.remove('active');document.querySelectorAll('main > section').forEach(s=>s.style.display='');}
+async function loadMemberData(user){
+ const client=await ensureAuthClient();if(!client)return;
+ const profileMessage=document.getElementById('profileMessage');profileMessage.textContent='';
+ try{
+  const {data,error}=await client.from('profiles').select('full_name').eq('id',user.id).maybeSingle();
+  if(error) throw error;
+  document.getElementById('profileName').value=data?.full_name||user.user_metadata?.full_name||'';
+  const {data:rows,error:historyError}=await client.from('transaction_requests').select('id,request_type,amount_kes,status,created_at').order('created_at',{ascending:false}).limit(10);
+  if(historyError) throw historyError;
+  const area=document.getElementById('activityArea');
+  if(!rows?.length){area.textContent='No requests yet.';}else{
+   const table=document.createElement('table');table.className='dash-table';
+   const thead=document.createElement('thead');thead.innerHTML='<tr><th>Type</th><th>Amount (KES)</th><th>Status</th></tr>';table.appendChild(thead);
+   const tbody=document.createElement('tbody');rows.forEach(r=>{const tr=document.createElement('tr');[r.request_type,r.amount_kes,r.status].forEach(v=>{const td=document.createElement('td');td.textContent=String(v);tr.appendChild(td)});tbody.appendChild(tr)});table.appendChild(tbody);area.replaceChildren(table);
+  }
+ }catch(err){document.getElementById('activityArea').textContent='Could not load data. Apply supabase-setup.sql and check your project settings.';}
+}
+document.getElementById('saveProfileButton').addEventListener('click',async()=>{
+ const client=await ensureAuthClient();const {data:{user}}=await client.auth.getUser();const msg=document.getElementById('profileMessage');msg.className='dash-error';msg.textContent='';
+ const full_name=document.getElementById('profileName').value.trim();if(!full_name||full_name.length>100){msg.textContent='Enter a name up to 100 characters.';return;}
+ const {error}=await client.from('profiles').upsert({id:user.id,full_name,updated_at:new Date().toISOString()});
+ if(error){msg.textContent='Could not save profile. Check that the SQL setup has been applied.';return;}msg.className='dash-success';msg.textContent='Profile saved.';
+});
+document.getElementById('transactionRequestForm').addEventListener('submit',async e=>{
+ e.preventDefault();const msg=document.getElementById('requestMessage');msg.className='dash-error';msg.textContent='';
+ const client=await ensureAuthClient();if(!client){msg.textContent='Configure Supabase first.';return;}
+ const {data:{user}}=await client.auth.getUser();if(!user){msg.textContent='Please log in again.';return;}
+ const amount=Number(document.getElementById('requestAmount').value);if(!Number.isSafeInteger(amount)||amount<=0){msg.textContent='Enter a whole-number KES amount above zero.';return;}
+ const btn=document.getElementById('submitRequestButton');btn.disabled=true;
+ const {error}=await client.from('transaction_requests').insert({user_id:user.id,request_type:document.getElementById('requestType').value,amount_kes:amount,note:document.getElementById('requestNote').value.trim()||null});
+ btn.disabled=false;
+ if(error){msg.textContent='Request could not be saved. Apply the SQL setup and check your connection.';return;}
+ msg.className='dash-success';msg.textContent='Request submitted for review. No money has been moved.';
+ document.getElementById('requestAmount').value='';document.getElementById('requestNote').value='';loadMemberData(user);
+});
+document.getElementById('signOutButton').addEventListener('click',async()=>{const client=await ensureAuthClient();if(client)await client.auth.signOut();hideDashboard();});
+
+document.getElementById('accountForm').addEventListener('submit',async e=>{
+ e.preventDefault();message.style.color='#a33';message.textContent='';
+ if(mode==='signup'&&document.getElementById('fullName').value.trim().length<2){message.textContent='Please enter your name.';return;}
+ if(!authConfigured()){message.textContent='Authentication is not configured yet. Follow the README to connect your Supabase project.';return;}
+ submit.disabled=true;submit.textContent='Please wait…';
+ try{
+  const client=await ensureAuthClient();const email=document.getElementById('email').value.trim();const pass=password.value;
+  if(mode==='signup'){
+   const {data,error}=await client.auth.signUp({email,password:pass,options:{data:{full_name:document.getElementById('fullName').value.trim()}}});
+   if(error) throw error;
+   message.style.color='#176b3a';message.textContent=data.session?'Account created. Opening your member area…':'Account created. Check your email for a confirmation link, then log in.';if(data.session){backdrop.classList.remove('open');showDashboard(data.user);}
+  }else{
+   const {error}=await client.auth.signInWithPassword({email,password:pass});if(error) throw error;
+   message.style.color='#176b3a';message.textContent='You are signed in successfully.';const {data:{user}}=await client.auth.getUser();backdrop.classList.remove('open');showDashboard(user);
+  }
+ }catch(err){message.textContent=err.message||'Could not complete authentication. Please try again.';}
+ finally{submit.disabled=false;submit.textContent=mode==='login'?'Login':'Create Account';}
+});
+
+window.addEventListener('load',async()=>{const client=await ensureAuthClient();if(client){const {data:{session}}=await client.auth.getSession();if(session?.user)showDashboard(session.user);}});
+document.querySelectorAll('[data-switch]').forEach(el=>el.addEventListener('click',()=>setMode(el.dataset.switch)));
+</script>
+</body></html>
